@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <_name>Prediksi Warna Batik</_name>
+    <id>org.inkscape.color.prediksiwarnabatik</id>
+    <dependency type="executable" location="extensions">batik_rnn.py</dependency>
+    <dependency type="executable" location="extensions">inkex.py</dependency>    
+    <param name="firstcolor" type="enum" _gui-text="Warna 1: ">
+        <_item value="yellow">Kuning</_item>
+        <_item value="orange">Oranye</_item>
+        <_item value="red">Merah</_item>
+        <_item value="brown">Cokelat</_item>
+        <_item value="blue">Biru</_item>
+        <_item value="green">Hijau</_item>
+        <_item value="purple">Ungu</_item>
+        <_item value="violet">Violet</_item>
+    </param>
+    <param name="secondcolor" type="enum" _gui-text="Warna 2: ">
+        <_item value="yellow">Kuning</_item>
+        <_item value="orange">Oranye</_item>
+        <_item value="red">Merah</_item>
+        <_item value="brown">Cokelat</_item>
+        <_item value="blue">Biru</_item>
+        <_item value="green">Hijau</_item>
+        <_item value="purple">Ungu</_item>
+        <_item value="violet">Violet</_item>
+    </param>    
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu _name="Color"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command reldir="extensions" interpreter="python">batik_rnn.py</command>
+    </script>
+</inkscape-extension>
